@@ -1,5 +1,5 @@
 # My private site
 
 Just my site :)
-Live "demo" at http://puuska.pw/
+Live "demo" at https://puuska.pw/
 
