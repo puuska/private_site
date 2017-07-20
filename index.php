@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <title>puuska.pw</title>
-  
-  <link rel="stylesheet" href="css/reset.min.css">
-<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" 
-content="Puuska private site">
-    <meta name="author" content="Puuska">
-	<meta name="keywords" content="Puuska,YouTube,Small Youtuber,hourboost.info,puuska youtube">  
-<link rel="stylesheet" href="css/style.css">
-<link href="css/css.css" rel="stylesheet" type="text/css">
-</head>
-<body>
+<html>
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>puuska.pw</title>
+	<link rel="stylesheet" href="css/reset.min.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Puuska private site">
+        <meta name="author" content="Puuska">
+	<meta name="keywords" content="Puuska, hourboost.info, puuska youtube, puszke, kotypuuski, csgo puuska">  
+	<link rel="stylesheet" href="css/style.css">
+	<link href="css/css.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
 <font face=Rajdhani>
 <link href="css/css.css" rel="stylesheet" type="text/css">
     <a href="http://steamcommunity.com/id/puuskago"><div class="button">Puuska</div></a>
@@ -88,21 +87,23 @@ content="Puuska private site">
   </div>
 </div>
 
- <video autoplay="" loop="" class="playermuz" id="playermuz">
-      <source src="wsgvape.mp3" type="audio/mp3">
+ <audio autoplay loop class="playermuz" id="playermuz">
+      <source src="wsgvape.ogg" type="audio/ogg">
+</audio>
+ <video autoplay loop class="player" id="player">
+ <source src="video.webm" type="video/webm">
 </video>
- <video autoplay="" loop="" class="player" id="player">
- <source src="video.mp4" type="video/mp4">
-</video>
-
+<?php
+$line = date('Y-m-d H:i:s') . " - $_SERVER[REMOTE_ADDR]";
+file_put_contents('visitors.log', $line . PHP_EOL, FILE_APPEND);
+?>
 
         <script>
 var video = document.getElementById('playermuz');
 video.volume = 0.1;
-var video = document.getElementById('player');
-video.volume = 0.0;
         </script>
 
 
 
 </video></div></div></div></font></body></html>
+
