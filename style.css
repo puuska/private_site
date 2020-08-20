@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Rajdhani SemiBold'), local('Rajdhani-SemiBold'), url(https://fonts.gstatic.com/s/rajdhani/v6/kA7V7gLI3uMMlXWrnQ_35Y4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+body {
+  background: #010A13;
+}
+
+.video-background {
+	background: #000;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  z-index: -99;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.video-container > video {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+@media screen and (max-aspect-ratio: 1920/1080) {
+  .video-container > video {
+    height: 100%;
+  }
+}
+
+@media screen and (min-aspect-ratio: 1920/1080) {
+  .video-container > video {
+    width: 100%;
+  }
+}
+
+.madeBy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  margin-bottom: 69px;
+  text-align: center;
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.button {
+  font-size: 60px;
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+  line-height: 85px;
+  color: #fff;
+  margin: 0 auto;
+  width: 350px;
+  height: 85px;
+  background: linear-gradient(#1d7751, #0e382c);
+  border: 3px #25793b solid; 
+  border-radius: 5px;
+  text-shadow: 0 0 20px rgba(255,255,255,0.3);
+  transition: .1s;
+  transform: scale(1);
+  cursor: pointer;
+  -webkit-user-select: none;
+  box-shadow: 0 0 50px rgba(0,117,9,0.5);
+  overflow: hidden;
+}
+
+.button:hover {
+  text-shadow: 0 0 20px rgba(255,255,255,0.5);
+  transform: scale(1.05);
+}
+
+.button:active {
+  background: linear-gradient(#1f8258, #114435);
+  text-shadow: 0 0 20px rgba(255,255,255,0.5);
+  transform: scale(1);
+  box-shadow: 0 0 75px rgba(43,137,68,0.5);
+}
+
+.button:after {
+  content: "";
+  position: relative;
+  top: -120px;
+  left: -90px;
+  display: block;
+  width: 35px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.5);
+  transform: rotate(35deg);
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  transition: none;
+}
+
+.button:hover:after {
+  left: 400px;
+  transition: .3s ease-in-out;
+}
+
+body {
+  font-size: 20px;
+  font-family: 'Rajdhani', sans-serif;
+  background: #010A13;
+}
+
+.madeBy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  margin-bottom: 69px;
+  text-align: center;
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+/*//////////////////////////////////////////////////////*/
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  text-align: center;
+}
+
+.killFeed {
+  margin-top: 15px;
+  min-width: 100px;
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  background: rgba(0,0,0,0.5);
+  border: 2px #B50000 solid;
+  border-radius: 6px;
+  padding: 0 10px;
+  transform: scale(1);
+  transition: .1s;
+}
+
+.killFeed:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(111, 0, 0, 0.5);
+}
+
+.killer {
+  color: #ECCE51;
+  line-height: 40px;
+  margin-right: 10px;
+  float: left;
+}
+
+.weapon {
+  float: left;
+}
+
+.weapon.ak47 {
+  margin-top: 8px;
+  height: 25px;
+  width: 80px;
+  background-image: url("assets/ak47.png");
+  background-size: cover;
+  float: left;
+}
+
+.weapon.usp {
+  margin-top: 8px;
+  height: 25px;
+  width: 80px;
+  background-image: url("assets/usp.png");
+  background-size: cover;
+  float: left;
+}
+
+
+.weapon.awp {
+  margin-top: 8px;
+  height: 25px;
+  width: 80px;
+  background-image: url("assets/awp.png");
+  background-size: cover;
+  float: left;
+}
+
+.headshot.true {
+  margin: 8px 0px 0px 10px;
+  height: 22px;
+  width: 22px;
+  background-image: url("assets/headshot.png");
+  background-size: cover;
+  float: left;
+}
+
+.wallbang {
+  float: left;
+}
+
+.wallbang.true {
+  margin: 8px 0px 0px 10px;
+  height: 22px;
+  width: 22px;
+  background-image: url("assets/wallbang.png");
+  background-size: cover;
+  float: left;
+}
+
+.headshot {
+  float: left;
+}
+
+.killed {
+  margin-left: 10px;
+  color: #71A6FF;
+  line-height: 40px;
+  float: left;
+}
